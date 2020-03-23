@@ -1,0 +1,186 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  color: #fff;
+}
+
+header {
+  background-image: url(img/intro-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+nav>div {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  vertical-align: middle;
+  margin-top: 35px;
+}
+
+nav .logo span {
+  font-weight: bolder;
+}
+
+nav .menu ul {
+  display: flex;
+  list-style: none;
+  margin: 0 auto 0 20%;
+}
+
+nav .menu ul li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.95rem;
+  padding: 15px;
+  transition: 0.5s;
+}
+
+nav .menu ul li a:hover {
+  transition: 0.5s;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+header .header-text {
+  padding: 150px 0 301px;
+  text-align: center;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.all-h {
+  font-weight: bolder;
+  font-size: 4rem;
+}
+
+.all-h2 {
+  font-weight: bolder;
+  font-size: 2.1rem;
+}
+
+.all-h3 {
+  font-weight: bolder;
+  font-size: 1.6rem;
+  margin-top: 15px;
+}
+
+.all-p {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+.all-p2 {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.all-p a,
+.all-p2 a {
+  color: #89baeb;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.all-p a,
+.all-p2 a:hover {
+  color: #cedff0;
+  transition: 0.3s;
+}
+
+.section-one {
+  padding: 99px 0;
+  background-color: #192024;
+  text-align: center;
+}
+
+.section-one .block {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.section-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: -1px;
+}
+
+.section-two .grid {
+  background-color: #37474f;
+  padding: 40px 40px 15px;
+}
+
+.section-two .grid-color {
+  background-color: #263238;
+  padding: 40px 40px 15px;
+}
+
+.section-three {
+  text-align: center;
+  background: black;
+  background-image: url(img/downloads-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-three .block {
+  width: 48%;
+  margin: 0 auto;
+}
+
+.section-three .background {
+  padding: 100px 0;
+  background: rgba(38, 50, 56, 0.6);
+}
+
+.button {
+  display: inline-block;
+  color: #fff;
+  padding: 15px 20px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  background-color: #37474f;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.button:hover {
+  transition: 0.3s;
+  background-color: rgb(89, 105, 112);
+}
+
+footer {
+  background-color: #263238;
+  text-align: center;
+}
+
+footer .block {
+  width: 50%;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.more-buttons>.button~.button {
+  margin-left: 10px;
+}
+
+.last-text {
+  display: inline-block;
+  width: 320px;
+}

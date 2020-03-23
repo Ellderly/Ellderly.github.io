@@ -1,0 +1,30 @@
+@media all and (max-width: 1000px) {
+    nav {
+        display: block;
+    }
+
+    nav .menu {
+        display: none;
+    }
+
+    nav .logo {
+        margin: 0;
+        padding-top: 20px;
+        font-size: 2rem;
+    }
+
+    header .header-text {
+        width: 90%;
+    }
+
+    .section-one .block,
+    .section-three .block,
+    footer .block {
+        width: 80%;
+    }
+
+    .section-two {
+        display: block;
+    }
+
+}
