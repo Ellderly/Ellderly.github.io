@@ -48,8 +48,15 @@ a {
 .block-six {
   background-color: #520a83;
 }
+
 .block-seven {
   background-color: #178a87;
+}
+
+
+
+.block-eight {
+  background-color: #0c26e1;
 }
 
 @media all and (max-width: 1000px) {

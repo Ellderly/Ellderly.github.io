@@ -1,0 +1,342 @@
+@import "vars";
+@import "default";
+@import "default";
+@import "mixins";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  overflow-x: hidden;
+  font-family: sans-serif;
+  color: @black;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+
+  max-width: 960px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+
+  .fullscreen-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    video {
+      min-width: 100%;
+      min-height: 100%;
+    }
+  }
+
+  .header-overplay {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(37, 45, 56, 0.7);
+    z-index: 1;
+  }
+
+  .header-content {
+    z-index: 2;
+    width: 100%;
+
+    p {
+      font-size: 1.15rem;
+      font-weight: bolder;
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 5rem;
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    a {
+      color: #fff;
+      padding: 15px 20px;
+      background-color: @orange;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: lighten(@orange, 8%);
+        transition: 0.3s;
+      }
+    }
+  }
+
+  .menu {
+    display: flex;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    padding: 15px 0;
+    background: rgba(255, 255, 255, 0.1);
+
+    a {
+      .btn(#fff, 0, rgba(0, 0, 0, 0));
+      font-size: 2.1rem;
+      margin: 0 auto;
+    }
+
+    ul {
+      display: inline-block;
+      margin: 0 auto;
+
+      li {
+        display: flex;
+
+        a {
+          .btn(#fff, 15px, rgba(0, 0, 0, 0));
+          font-size: 0.9rem;
+
+          &:hover {
+            color: @orange;
+          }
+
+          &.login {
+            .btn(#fff, 15px, @orange);
+          }
+        }
+      }
+    }
+  }
+}
+
+.choose-program {
+  .head-text();
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    margin: 80px auto 0;
+    width: 1100px;
+
+    .block {
+      display: flex;
+      margin: 30px 20px;
+
+      .text {
+        margin-left: 30px;
+
+        h3 {
+          margin-bottom: 5px;
+          margin-top: 0;
+        }
+
+        p {
+          margin-top: 0;
+          margin-bottom: 6px;
+        }
+
+        .DISCOVER {
+          color: @orange;
+          font-size: 0.8rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.selection-bg {
+  background-image: url(../img/cta-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .head-text(#fff, #fff, 2.3rem, 1rem);
+
+  h2,
+  p {
+    letter-spacing: 0.04rem;
+  }
+
+  a {
+    .btn(#fff, 15px 20px, @orange);
+  }
+}
+
+.our-classes {
+  .head {
+    .head-text();
+  }
+
+  .training-classes {
+    position: relative;
+    width: 1150px;
+    margin: 80px auto 0;
+
+    .all-class {
+      display: block;
+      position: relative;
+      width: 350px;
+      padding: 30px 0 30px 90px;
+      text-align: left;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: @black;
+      cursor: pointer;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.156);
+      border-radius: 5px;
+      outline: 0;
+      border: 0;
+      background: #fff;
+      background-image: url(../img/tabs-first-icon.png);
+      background-position: 10% 50%;
+      background-repeat: no-repeat;
+      background-size: 35px;
+
+      &:focus {
+        color: @orange;
+      }
+    }
+
+    .first-class:focus~.first-class-aside {
+      display: inline-block;
+    }
+
+    .second-class:focus~.second-class-aside {
+      display: inline-block;
+    }
+
+    .third-class:focus~.third-class-aside {
+      display: inline-block;
+    }
+
+    .fourth-class:focus~.fourth-class-aside {
+      display: inline-block;
+    }
+
+    .first-class~.all-class {
+      margin-top: 30px;
+    }
+
+    .big-btn {
+      .btn(#fff, 23px 90px, @orange);
+      margin-top: 30px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .aside {
+      display: none;
+      position: absolute;
+      width: min-content;
+      top: 0;
+      margin-left: 50px;
+
+      img {
+        border-radius: 5px;
+      }
+
+      p {
+        line-height: 1.4rem;
+      }
+    }
+  }
+}
+
+.classes-schedule {
+  background-image: url(../img/schedule-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .head-text {
+    .head-text(#fff, #fff);
+  }
+
+  .block-table {
+    margin-top: 60px;
+
+    input {
+
+      display: inline-block;
+      outline: none;
+      border: none;
+      background: none;
+      margin: 0 10px;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.5s;
+
+
+      &:focus {
+        transition: .5s;
+        color: @orange;
+      }
+    }
+
+    .first-input {
+      margin-left: 35%;
+    }
+
+    .monday:focus~table td.monday-td {
+      opacity: 1;
+      transition: .5s;
+    }
+
+    .tuesday:focus~table td.tuesday-td {
+      opacity: 1;
+      transition: .5s;
+    }
+
+    .wednesday:focus~table td.wednesday-td {
+      opacity: 1;
+      transition: .5s;
+    }
+
+    .thusday:focus~table td.thusday-td {
+      opacity: 1;
+      transition: .5s;
+    }
+
+    .friday:focus~table td.friday-td {
+      opacity: 1;
+      transition: .5s;
+    }
+
+    table {
+      color: rgba(255, 255, 255, 0.885);
+      font-size: 0.85rem;
+      font-weight: 400;
+      margin: 40px auto 0;
+      border-collapse: collapse;
+
+      .names-td,
+      .training-th {
+        opacity: 1;
+        font-weight: bold;
+      }
+
+      th,
+      td {
+        transition: .5s;
+        opacity: 0;
+        padding: 40px 55px;
+        border: 1px solid #fff;
+      }
+
+    }
+  }
+}
