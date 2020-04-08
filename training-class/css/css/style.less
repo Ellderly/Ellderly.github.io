@@ -19,6 +19,7 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
+  font-family: "Poppins";
   color: #fff;
 
   max-width: 960px;
@@ -98,7 +99,7 @@ body {
     }
 
     ul {
-      display: inline-block;
+      display: flex;
       margin: 0 auto;
 
       li {
@@ -454,6 +455,7 @@ aside {
           padding: 10px;
           color: @light-grey;
           font-size: 0.95rem;
+          margin-bottom: 25px;
 
           &::placeholder {
             color: @light-grey;
@@ -461,7 +463,6 @@ aside {
 
           &:first-child {
             margin-right: 25px;
-            margin-bottom: 25px;
           }
         }
 
@@ -477,7 +478,6 @@ aside {
           width: 100%;
           resize: none;
           padding: 10px;
-          margin-top: 25px;
           font-size: 0.95rem;
           font-family: sans-serif;
           border: 1px solid rgba(209, 209, 209, 0.781);
@@ -498,11 +498,11 @@ aside {
 
 footer {
   font-size: 0.8rem;
-  padding: 40px 0;
+  margin: 40px 0;
   text-align: center;
   background: rgb(245, 245, 245);
 
   a {
-    color: @orange
+    color: @orange;
   }
 }
