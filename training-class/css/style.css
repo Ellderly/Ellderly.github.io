@@ -537,8 +537,9 @@ aside .grid .form-register form .btn:hover {
   background-color: #f07660;
 }
 footer {
+  display: block;
   font-size: 0.8rem;
-  margin: 40px 0;
+  padding: 40px 0;
   text-align: center;
   background: #f5f5f5;
 }
