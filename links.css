@@ -53,10 +53,12 @@ a {
   background-color: #178a87;
 }
 
-
-
 .block-eight {
   background-color: #0c26e1;
+}
+
+.block-nine {
+  background-color: #527536;
 }
 
 @media all and (max-width: 1000px) {
