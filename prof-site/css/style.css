@@ -58,7 +58,8 @@ header {
 }
 @media all and (max-width: 600px) {
   header {
-    height: 950px;
+    height: auto;
+    padding-bottom: 50px;
   }
 }
 header nav {
@@ -115,6 +116,7 @@ header nav ul label.menu {
 @media all and (max-width: 1050px) {
   header nav ul label.menu {
     display: block;
+    right: 20px;
   }
 }
 header nav ul input[type="checkbox"]:checked ~ li a {
@@ -219,6 +221,11 @@ header .main-text .text .btn-s .btn-one:hover {
   background-color: #007cc0;
   transition: 0.3s;
 }
+@media all and (max-width: 400px) {
+  header .main-text .text .btn-s .btn-one {
+    margin-right: 50%;
+  }
+}
 header .main-text .text .btn-s .btn-two {
   background: auto;
   transition: 0.3s;
@@ -233,6 +240,12 @@ header .main-text .text .btn-s .btn-two:hover {
 header .main-text .text .btn-s .btn-two:hover {
   background-color: #fff;
   color: #49c0b6;
+}
+@media all and (max-width: 400px) {
+  header .main-text .text .btn-s .btn-two {
+    display: inline-block;
+    margin-top: 20px;
+  }
 }
 header .main-text img {
   border-radius: 100%;
@@ -450,16 +463,21 @@ header .main-text img {
     margin: 0;
   }
 }
-.our-company .block .about-company .us {
-  text-align: center;
-  padding: 15px 0;
-}
-.our-company .block .about-company .us .digit {
+.our-company .block .about-company .digit {
   margin: 10px 0;
   font-size: 2rem;
 }
-.our-company .block .about-company .us p {
+.our-company .block .about-company p {
   font-size: 1rem;
+}
+.our-company .block .about-company .us {
+  padding: 15px 50px;
+}
+@media all and (max-width: 1050px) {
+  .our-company .block .about-company .us {
+    text-align: center;
+    padding: 15px 0;
+  }
 }
 @media all and (max-width: 1050px) {
   .news {

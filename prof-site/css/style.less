@@ -20,8 +20,9 @@ header {
     height: 1100px;
   }
 
-  @media all and (max-width:600px) {
-    height: 950px;
+  @media all and (max-width: 600px) {
+    height: auto;
+    padding-bottom: 50px;
   }
 
   nav {
@@ -80,10 +81,11 @@ header {
 
         @media all and(max-width:1050px) {
           display: block;
+          right: 20px;
         }
       }
 
-      input[type="checkbox"]:checked~li a {
+      input[type="checkbox"]:checked ~ li a {
         display: block;
         padding: 15px 15px 15px;
       }
@@ -132,7 +134,7 @@ header {
       width: 500px;
     }
 
-    @media all and (max-width:600px) {
+    @media all and (max-width: 600px) {
       width: 96%;
     }
 
@@ -173,6 +175,10 @@ header {
         .btn-one {
           margin-right: 15px;
           .btn-bottom(@turquoise, @bg-button, 15px 25px);
+
+          @media all and (max-width: 400px) {
+            margin-right: 50%;
+          }
         }
 
         .btn-two {
@@ -183,6 +189,11 @@ header {
             background-color: #fff;
             color: @turquoise;
           }
+
+          @media all and (max-width: 400px) {
+            display: inline-block;
+            margin-top: 20px;
+          }
         }
       }
     }
@@ -191,7 +202,7 @@ header {
       border-radius: 100%;
       width: 100%;
 
-      @media all and (max-width:600px) {
+      @media all and (max-width: 600px) {
         max-width: 400px;
       }
     }
@@ -226,7 +237,7 @@ header {
     width: 500px;
   }
 
-  @media all and (max-width:600px) {
+  @media all and (max-width: 600px) {
     width: 96%;
   }
 
@@ -280,7 +291,7 @@ header {
       width: 500px;
     }
 
-    @media all and (max-width:600px) {
+    @media all and (max-width: 600px) {
       width: 95%;
     }
 
@@ -290,7 +301,7 @@ header {
       margin: 30px 15px 0;
       border-radius: 10px;
 
-      @media all and (max-width:800px) {
+      @media all and (max-width: 800px) {
         box-sizing: border-box;
         width: 100%;
         height: 200px;
@@ -370,9 +381,11 @@ header {
   padding: 50px 0;
   width: 100%;
   margin: 0;
-  background-image: linear-gradient(to right,
+  background-image: linear-gradient(
+      to right,
       rgba(0, 0, 0, 0.7) 0%,
-      rgba(0, 0, 0, 0.7) 100%),
+      rgba(0, 0, 0, 0.7) 100%
+    ),
     url(../img/stats_bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -422,17 +435,20 @@ header {
         margin: 0;
       }
 
+      .digit {
+        margin: 10px 0;
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
       .us {
-        text-align: center;
-        padding: 15px 0;
+        padding: 15px 50px;
 
-        .digit {
-          margin: 10px 0;
-          font-size: 2rem;
-        }
-
-        p {
-          font-size: 1rem;
+        @media all and (max-width: 1050px) {
+          text-align: center;
+          padding: 15px 0;
         }
       }
     }
@@ -606,7 +622,7 @@ footer {
       display: block;
       width: 530px;
 
-      .block~.block {
+      .block ~ .block {
         margin-top: 50px;
       }
     }
