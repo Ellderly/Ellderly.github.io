@@ -1,0 +1,47 @@
+.block-story(@bg-image, @before-image, @after-text) {
+    background-image: @bg-image;
+    transition: 0.2s;
+    position: relative;
+
+    &:hover {
+        box-shadow: 7px 7px 0 @blue-green;
+    }
+
+    &::before {
+        content: @before-image;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: linear-gradient(to top,
+                rgba(252, 227, 138, 0.8) 0%,
+                rgba(243, 129, 129, 0.8) 100%);
+        text-align: center;
+        padding-top: 70px;
+        opacity: 0;
+        transition: 0.2s;
+    }
+
+    &:hover::before,
+    &:hover::after {
+        opacity: 1;
+    }
+
+    &::after {
+        content: @after-text;
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 110px;
+        font-size: 16px;
+        opacity: 0;
+        transition: 0.2s;
+    }
+}
