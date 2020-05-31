@@ -1,5 +1,5 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   padding: 0;
   margin: 0;
@@ -17,7 +17,7 @@ p {
 }
 h2,
 h4 {
-  font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script", cursive;
 }
 h1 {
   font-size: 140px;
@@ -30,11 +30,11 @@ h2 {
   margin-bottom: 0px;
 }
 h3 {
-  font-size: 40px;
+  font-size: 30px;
   margin: 10px 0 40px;
 }
 h4 {
-  font-size: 30px;
+  font-size: 24px;
   margin: auto;
 }
 .head-text {
@@ -46,14 +46,10 @@ h4 {
 .head-text h4 {
   text-align: center;
 }
-.head-text .line {
-  width: 60px;
-  height: 3px;
-  margin: 0 auto;
-}
 .head-text p {
   margin-top: 20px;
   text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 section {
   width: 1100px;
@@ -80,6 +76,12 @@ a {
 }
 article {
   padding: 0 20px;
+}
+.line {
+  width: 60px;
+  height: 3px;
+  margin: 0 auto;
+  background: #f38181;
 }
 header {
   width: 100%;
@@ -279,7 +281,7 @@ main .figures ul li {
   padding: 40px 0;
 }
 main .figures ul li h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-top: 0;
 }
 main .figures ul li p {
@@ -322,7 +324,7 @@ main .design {
   padding-bottom: 0;
 }
 main .design::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -343,4 +345,189 @@ main .design .head-text img {
   border-radius: 10px;
   object-fit: contain;
   border-radius: 30px;
+}
+main .what-we-do .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  margin-top: 80px;
+}
+main .what-we-do .grid .right-blocks .long-block {
+  margin-bottom: 10px;
+}
+main .what-we-do .grid .right-blocks .long-block .check[type="checkbox"] {
+  display: none;
+}
+main .what-we-do .grid .right-blocks .long-block .check[type="checkbox"]:checked ~ .text {
+  display: block;
+}
+main .what-we-do .grid .right-blocks .long-block .check[type="checkbox"]:checked ~ .text-1 {
+  display: none;
+}
+main .what-we-do .grid .right-blocks .long-block .button {
+  display: block;
+  position: relative;
+  padding: 15px 0 15px 60px;
+  border: solid 1px #e5e5e5;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+main .what-we-do .grid .right-blocks .long-block .button::before {
+  content: url(../img/picture.svg);
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+main .what-we-do .grid .right-blocks .long-block .but-2::before {
+  content: url(../img/equalizer.svg);
+}
+main .what-we-do .grid .right-blocks .long-block .but-3::before {
+  content: url(../img/bullseye.svg);
+}
+main .what-we-do .grid .right-blocks .long-block .text {
+  display: none;
+  padding: 15px;
+  border: solid 1px #e5e5e5;
+  color: #999;
+  font-style: italic;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  cursor: default;
+}
+main .what-we-do .grid .right-blocks .long-block .text-1 {
+  display: block;
+}
+main .quote {
+  background-color: #f8f8f8;
+  padding: 70px;
+}
+main .quote .container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 60px;
+  width: 1000px;
+  margin: 0 auto;
+}
+main .quote .container img {
+  padding: 40px;
+  border: solid 3px #95e1d3;
+}
+main .quote .container p {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.5;
+  margin: 0;
+}
+main .quote .container h5 {
+  position: relative;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 500;
+  color: #333;
+  font-size: 24px;
+  margin: 20px 0 0 0;
+  padding-left: 70px;
+}
+main .quote .container h5::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  margin: 0 auto;
+  left: 0;
+  top: 20px;
+  background-color: #f38181;
+}
+main .our-team .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin-top: 90px;
+}
+main .our-team .grid .image {
+  transition: 0.2s;
+  position: relative;
+  cursor: pointer;
+}
+main .our-team .grid .image:hover {
+  box-shadow: 7px 7px 0 #95e1d3;
+}
+main .our-team .grid .image:hover ul {
+  display: flex;
+}
+main .our-team .grid .image::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(252, 227, 138, 0.8) 0%, rgba(243, 129, 129, 0.8) 100%);
+  text-align: center;
+  opacity: 0;
+  transition: 0.2s;
+}
+main .our-team .grid .image:hover::before {
+  opacity: 1;
+}
+main .our-team .grid .image img {
+  width: 100%;
+}
+main .our-team .grid .image ul {
+  display: none;
+  position: absolute;
+  top: 180px;
+  left: 30px;
+}
+main .our-team .grid .image ul li:nth-child(1) ~ li a {
+  border-left: 1px solid rgba(243, 129, 129, 0.5);
+}
+main .our-team .grid .image ul li a {
+  padding: 15px 25px;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fce38a;
+  transition: 0.2s;
+}
+main .our-team .grid .image ul li a:hover {
+  background-color: #f38181;
+}
+main .our-team .grid .image ul li a img {
+  width: 24px;
+}
+main .our-team .grid .image ul li .facebook {
+  background-image: url(../img/facebook-red.png);
+  transition: 0.2s;
+}
+main .our-team .grid .image ul li .facebook:hover {
+  background-image: url(../img/facebook-white.png);
+}
+main .our-team .grid .image ul li .twitter {
+  background-image: url(../img/twitter-red.png);
+  transition: 0.2s;
+}
+main .our-team .grid .image ul li .twitter:hover {
+  background-image: url(../img/twitter-white.png);
+}
+main .our-team .grid .image ul li .vine {
+  background-image: url(../img/vine-red.png);
+  transition: 0.2s;
+}
+main .our-team .grid .image ul li .vine:hover {
+  background-image: url(../img/vine-white.png);
+}
+main .our-team .grid .image ul li .instagram {
+  background-image: url(../img/instagram-red.png);
+  transition: 0.2s;
+}
+main .our-team .grid .image ul li .instagram:hover {
+  background-image: url(../img/instagram-white.png);
 }

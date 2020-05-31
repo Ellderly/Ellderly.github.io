@@ -1,5 +1,5 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   padding: 0;
   margin: 0;
@@ -17,7 +17,7 @@ p {
 }
 h2,
 h4 {
-  font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script", cursive;
 }
 h1 {
   font-size: 140px;
@@ -30,11 +30,11 @@ h2 {
   margin-bottom: 0px;
 }
 h3 {
-  font-size: 40px;
+  font-size: 30px;
   margin: 10px 0 40px;
 }
 h4 {
-  font-size: 30px;
+  font-size: 24px;
   margin: auto;
 }
 .head-text {
@@ -46,14 +46,10 @@ h4 {
 .head-text h4 {
   text-align: center;
 }
-.head-text .line {
-  width: 60px;
-  height: 3px;
-  margin: 0 auto;
-}
 .head-text p {
   margin-top: 20px;
   text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 section {
   width: 1100px;
@@ -80,4 +76,10 @@ a {
 }
 article {
   padding: 0 20px;
+}
+.line {
+  width: 60px;
+  height: 3px;
+  margin: 0 auto;
+  background: #f38181;
 }
