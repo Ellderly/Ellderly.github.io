@@ -32,10 +32,14 @@ h2 {
 h3 {
   font-size: 30px;
   margin: 10px 0 40px;
+  text-transform: uppercase;
 }
 h4 {
   font-size: 24px;
   margin: auto;
+}
+h5 {
+  font-size: 14px;
 }
 .head-text {
   cursor: default;
@@ -82,4 +86,12 @@ article {
   height: 3px;
   margin: 0 auto;
   background: #f38181;
+}
+article {
+  padding: 0;
+}
+.line-grey {
+  height: 1px;
+  background-color: #e5e5e5;
+  margin: 20px 0;
 }
