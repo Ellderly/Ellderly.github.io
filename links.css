@@ -65,6 +65,10 @@ a {
   background-color: #4f57e9;
 }
 
+.block-eleven {
+  background-color: #954f81;
+}
+
 @media all and (max-width: 1000px) {
   a {
     display: block;
