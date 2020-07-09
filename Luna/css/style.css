@@ -1,5 +1,6 @@
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   padding: 0;
@@ -113,6 +114,9 @@ ul {
     width: 96%;
   }
 }
+.display-none {
+  display: none;
+}
 header {
   position: relative;
   background-image: url(../img/photo-bg-1.png);
@@ -225,12 +229,12 @@ header .header-content p {
   }
 }
 main .our-work {
-  margin: 80px 0;
+  padding: 80px 0;
 }
 main .our-work .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 30px;
+  gap: 30px;
 }
 main .our-work .container .block {
   text-align: center;
@@ -419,7 +423,7 @@ main .our-project .block-photo ul li input[type="button"]:focus {
 main .our-project .block-photo .photos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 30px;
+  gap: 30px;
   margin-top: 40px;
 }
 main .our-project .block-photo .photos .photo-text-block {
@@ -577,7 +581,7 @@ main .adaptive {
 main .adaptive .container {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-gap: 30px;
+  gap: 30px;
 }
 main .adaptive .container img {
   width: 100%;
@@ -621,7 +625,7 @@ main .numeral {
 main .numeral .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 50px;
+  gap: 50px;
 }
 main .numeral .container .numeral-block {
   text-align: center;
@@ -649,7 +653,7 @@ main .numeral .container .numeral-block p {
 main .recent-post .photos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 30px;
+  gap: 30px;
   margin-top: 40px;
 }
 main .recent-post .photos .photo-text-block {
@@ -781,7 +785,7 @@ main .logos::before {
 main .logos .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 90px;
+  gap: 90px;
 }
 main .logos .container a {
   position: relative;
@@ -819,7 +823,7 @@ main .over-footer {
 main .over-footer .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 30px;
+  gap: 30px;
 }
 main .over-footer .container .logo,
 main .over-footer .container h4 {
