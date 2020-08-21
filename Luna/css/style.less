@@ -27,9 +27,7 @@ header {
     margin: 0 auto;
     padding-top: 40px;
 
-
     .list {
-
       input[type="checkbox"],
       label {
         display: none;
@@ -69,9 +67,9 @@ header {
           border-radius: 2px;
         }
 
-        input[type="checkbox"]:checked~ul {
+        input[type="checkbox"]:checked ~ ul {
           transform: translateX(10%);
-          transition: .2s;
+          transition: 0.2s;
         }
 
         ul {
@@ -83,7 +81,7 @@ header {
           border-radius: 3px;
           z-index: 2;
           transform: translateX(120%);
-          transition: .2s;
+          transition: 0.2s;
 
           li {
             margin: 0;
@@ -124,6 +122,9 @@ header {
       padding: 160px 0;
     }
 
+    @media all and (max-width: 700px) {
+      padding: 60px 0;
+    }
     @media all and (max-width: 500px) {
       h2 {
         font-size: 28px;
@@ -138,7 +139,7 @@ header {
 
 main {
   .our-work {
-    padding: 80px 0;
+    padding: 60px 0;
 
     .container {
       display: grid;
@@ -212,7 +213,7 @@ main {
         width: 300px;
         display: block;
 
-        .block~.block {
+        .block ~ .block {
           display: block;
           margin-top: 40px;
         }
@@ -249,8 +250,6 @@ main {
         margin: 0 auto;
         z-index: 10;
       }
-
-
     }
 
     @media all and (max-width: 1200px) {
@@ -268,7 +267,6 @@ main {
     }
 
     @media all and (max-width: 660px) {
-
       .images-ideas {
         &:before {
           content: "";
@@ -292,7 +290,6 @@ main {
     background: linear-gradient(to right, #211b19, #4e3427);
 
     .container {
-
       display: grid;
       grid-template-columns: 1fr auto;
 
@@ -329,7 +326,6 @@ main {
           margin: 30px auto 0;
         }
       }
-
     }
   }
 
@@ -641,7 +637,7 @@ main {
       }
     }
 
-    @media all and (max-width:900px) {
+    @media all and (max-width: 900px) {
       .container {
         grid-template-columns: 1fr 1fr;
 
@@ -668,7 +664,6 @@ main {
             content: "";
             background-color: rgba(17, 17, 17, 0.7);
           }
-
         }
 
         &:hover .text {
@@ -682,8 +677,6 @@ main {
           p {
             color: #fff;
           }
-
-
         }
 
         &:hover .image-photo .date-block {
@@ -724,7 +717,7 @@ main {
               border-radius: 4px 4px 0 0;
               background: #363636;
               padding: 18px 12px;
-              transition: .2s;
+              transition: 0.2s;
             }
 
             .month {
@@ -733,7 +726,7 @@ main {
               padding: 13px 12px;
               border-radius: 0 0 4px 4px;
               background: #252525;
-              transition: .2s;
+              transition: 0.2s;
             }
           }
         }
@@ -787,7 +780,7 @@ main {
       }
     }
 
-    @media all and (max-width:660px) {
+    @media all and (max-width: 660px) {
       .photos {
         display: block;
         width: 330px;
@@ -807,7 +800,6 @@ main {
     background-size: cover;
     background-position: center;
     position: relative;
-
 
     &::before {
       content: "";
@@ -935,7 +927,7 @@ main {
       }
     }
 
-    @media all and (max-width:660px) {
+    @media all and (max-width: 660px) {
       .container {
         width: 350px;
         display: block;
