@@ -1,0 +1,13 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+a {
+  cursor: pointer;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0.48px;
+  margin: 0;
+}

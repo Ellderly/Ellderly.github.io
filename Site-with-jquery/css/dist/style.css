@@ -1,0 +1,110 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+a {
+  cursor: pointer;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0.48px;
+  margin: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+.header-section {
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+.header-section header {
+  width: 1350px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin: 0 auto;
+  padding: 15px 0 0;
+}
+.header-section header .logo {
+  font-size: 25px;
+  font-weight: 500;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.header-section header nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.header-section header nav ul li {
+  padding: 10px 22px;
+}
+.header-section header nav ul li a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transition: 0.2s;
+}
+.header-section header nav ul li a:hover {
+  color: #fff;
+}
+.header-section header nav ul li:nth-child(4) {
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+.header-section header nav ul li:nth-child(4) a {
+  color: #fff;
+}
+.header-section header nav ul li:nth-child(5) {
+  border-radius: 5px;
+  border: 1px solid #fff;
+}
+.header-section header nav ul li:nth-child(5) a {
+  color: #fff;
+}
+.header-section .container .menu {
+  max-width: max-content;
+  text-align: center;
+  margin: 0 auto;
+  padding: 250px 0;
+}
+.header-section .container .menu p {
+  color: rgba(255, 255, 255, 0.8);
+}
+.header-section .container .menu form {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 0.9fr;
+  background-color: #fff;
+}
+.header-section .container .menu form input[type="search"],
+.header-section .container .menu form select,
+.header-section .container .menu form option {
+  color: #9d9fa2;
+  box-sizing: border-box;
+  padding: 15px 0 15px 20px;
+  font-size: 16px;
+}
+.header-section .container .menu form input[type="search"] {
+  color: grey;
+}
+.header-section .container .menu form input[type="search"],
+.header-section .container .menu form select,
+.header-section .container .menu form input[type="search"]:focus,
+.header-section .container .menu form select:focus {
+  border: none;
+  outline: none;
+}
+.header-section .container .menu form select,
+.header-section .container .menu form select:focus {
+  border-left: 1px solid grey;
+}
+.header-section .container .menu form input[type="submit"] {
+  color: #fff;
+  background-color: #3885e5;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}

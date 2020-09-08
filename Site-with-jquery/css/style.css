@@ -1,0 +1,396 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+a {
+  cursor: pointer;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0.48px;
+  margin: 0;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+/* Слайдер */
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  width: 30px;
+  height: 60px;
+  border: none;
+}
+.slick-arrow:focus {
+  border: none;
+  outline: none;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+  left: 0;
+  background: url(../img/sl.arrow.l.png) 0 0% no-repeat;
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+  right: 0;
+  background: url(../img/sl.arrow.r.png) 0 0% no-repeat;
+}
+/* Стрелка не активная */
+/* Точки (булиты) */
+/* Активная точка */
+/* Элемент точки */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+.header-section {
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+.header-section header {
+  max-width: 1350px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin: 0 auto;
+  padding: 15px 0 0;
+}
+.header-section header .logo {
+  font-size: 25px;
+  font-weight: 500;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.header-section header nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.header-section header nav ul li {
+  padding: 10px 22px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.header-section header nav ul li a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transition: 0.2s;
+}
+.header-section header nav ul li a:hover {
+  color: #fff;
+}
+.header-section header nav ul li:nth-child(4) {
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+.header-section header nav ul li:nth-child(4) a {
+  color: #fff;
+}
+.header-section header nav ul li:nth-child(5) {
+  border-radius: 5px;
+  border: 1px solid #fff;
+}
+.header-section header nav ul li:nth-child(5) a {
+  color: #fff;
+}
+.header-section header nav ul li:nth-child(5):hover {
+  background: #fff;
+}
+.header-section header nav ul li:nth-child(5):hover a {
+  color: #000;
+}
+.header-section .container .menu {
+  max-width: max-content;
+  text-align: center;
+  margin: 0 auto;
+  padding: 250px 0;
+}
+.header-section .container .menu p {
+  color: rgba(255, 255, 255, 0.8);
+}
+.header-section .container .menu form {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 0.9fr;
+  background-color: #fff;
+}
+.header-section .container .menu form input[type="search"],
+.header-section .container .menu form select,
+.header-section .container .menu form option {
+  color: #9d9fa2;
+  box-sizing: border-box;
+  padding: 15px 0 15px 20px;
+  font-size: 16px;
+}
+.header-section .container .menu form input[type="search"] {
+  color: grey;
+}
+.header-section .container .menu form input[type="search"],
+.header-section .container .menu form select,
+.header-section .container .menu form input[type="search"]:focus,
+.header-section .container .menu form select:focus {
+  border: none;
+  outline: none;
+}
+.header-section .container .menu form select,
+.header-section .container .menu form select:focus {
+  border-left: 1px solid grey;
+  background: url(../img/arrow-down-sign-to-navigate.png) no-repeat 94% 50%;
+  background-size: 14px;
+  -webkit-appearance: none;
+}
+.header-section .container .menu form input[type="submit"] {
+  color: #fff;
+  background-color: #3885e5;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+.header-section .container .button-scroll {
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+  line-height: 2.5;
+  padding: 0 0 50px 0;
+  text-decoration: none;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+.header-section .container .button-scroll img {
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+}
+.new-job {
+  scroll-behavior: smooth;
+}
+.new-job nav {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 30px 0;
+}
+.new-job nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.new-job nav ul li {
+  padding: 10px 30px;
+}
+.new-job nav ul li a {
+  text-decoration: none;
+  color: #9d9fa2;
+  transition: 0.2s;
+}
+.new-job nav ul li a:hover {
+  color: #3885e5;
+}
+.new-job nav > a {
+  text-decoration: none;
+  color: #4f5660;
+  border: 1px solid #4f5660;
+  transition: 0.2s;
+  padding: 10px 25px;
+  border-radius: 5px;
+}
+.new-job nav > a:hover {
+  color: #3885e5;
+  border: 1px solid #3885e5;
+}
+.new-job .article-text-1 {
+  text-align: center;
+  color: #4f5660;
+  margin: 100px 0;
+}
+.new-job .article-text-1 p {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.67;
+  letter-spacing: 0.18px;
+}
+.important-work {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #fff;
+}
+.important-work .bg-content {
+  background-color: #3885e5;
+}
+.important-work .bg-content .content {
+  max-width: 470px;
+  margin-left: auto;
+  padding: 100px 60px 0 0;
+}
+.important-work .bg-content .content p {
+  line-height: 1.67;
+  letter-spacing: 0.18px;
+}
+.important-work .bg-content .content a {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: 0.2s;
+  padding: 10px 25px;
+  border-radius: 5px;
+  margin: 40px 0 0 0;
+}
+.important-work .bg-content .content a:hover {
+  color: #3885e5;
+  background-color: #fff;
+}
+.section-slider {
+  max-width: 97%;
+  margin: 100px auto;
+  color: #4f5660;
+}
+.section-slider h2 {
+  text-align: center;
+}
+.section-slider .slider {
+  position: relative;
+  margin: 100px 0 0 0;
+}
+.section-slider .slider .slider-item {
+  position: relative;
+  display: inline-block;
+  padding: 40px;
+  margin: 0 10px;
+  border: 1px solid #d4d9de;
+  cursor: default;
+  opacity: 0.5;
+}
+.section-slider .slider .slider-item:focus {
+  outline: 0;
+}
+.section-slider .slider .slider-item.slick-center {
+  opacity: 1;
+}
+.section-slider .slider .slider-item .head-content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.section-slider .slider .slider-item .head-content .head-text {
+  padding-left: 15px;
+}
+.section-slider .slider .slider-item .head-content .head-text .position {
+  font-size: 14px;
+}
+.section-slider .slider .slider-item .head-content .head-text a {
+  display: block;
+  color: #3885e5;
+  text-decoration: none;
+  padding: 10px 0;
+}
+.section-slider .slider .slider-item .head-content .head-text a:focus {
+  outline: 0;
+}
+.section-slider .slider .slider-item .head-content .head-text .cub {
+  color: #9d9fa2;
+  font-size: 14px;
+}
+.section-slider .slider .slider-item p.text {
+  font-size: 15px;
+  line-height: 1.67;
+  letter-spacing: 0.18px;
+}
+.section-slider .slider .slider-item a.a-weight {
+  color: #3885e5;
+  text-decoration: none;
+  font-weight: 600;
+}
+.section-slider .slider .slider-item a.a-weight:focus {
+  outline: 0;
+}
+.man-and-text {
+  height: 250px;
+  padding: 70px;
+  position: relative;
+  background-image: url(../img/warstwa-7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.man-and-text p {
+  max-width: 500px;
+  position: absolute;
+  color: #fff;
+  right: 200px;
+  top: 30%;
+  line-height: 1.64;
+  letter-spacing: 0.22px;
+}
+.subscribe {
+  text-align: center;
+  color: #4f5660;
+  padding: 100px 0;
+}
+.subscribe .container p {
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.67;
+  letter-spacing: 0.18px;
+}
+.subscribe .container form {
+  display: flex;
+  max-width: 450px;
+  margin: 70px auto 0;
+}
+.subscribe .container form input[type="email"] {
+  width: 100%;
+  border: 1px solid #d4d9de;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #9d9fa2;
+}
+.subscribe .container form input[type="email"]::placeholder {
+  color: #9d9fa2;
+}
+.subscribe .container form input[type="email"]:focus {
+  outline: none;
+}
+.subscribe .container form input[type="submit"] {
+  padding: 0 20px;
+  border: none;
+  background: #3885e5;
+  color: #fff;
+  font-size: 16px;
+}
+.footer {
+  border-top: 1px solid #d4d9de;
+  padding: 20px 0;
+}
+.footer .footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.footer .footer-grid p {
+  margin: 0;
+  color: #4f5660;
+  text-align: center;
+}
