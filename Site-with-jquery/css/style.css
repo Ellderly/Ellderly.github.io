@@ -78,7 +78,7 @@ body {
   display: grid;
   grid-template-columns: 1fr auto;
   margin: 0 auto;
-  padding: 15px 0 0;
+  padding: 15px 50px 0;
 }
 .header-section header .logo {
   font-size: 25px;
@@ -191,7 +191,7 @@ body {
 .new-job nav {
   display: grid;
   grid-template-columns: 1fr auto;
-  padding: 30px 0;
+  padding: 30px 50px;
 }
 .new-job nav ul {
   display: flex;
@@ -210,7 +210,7 @@ body {
 .new-job nav ul li a:hover {
   color: #3885e5;
 }
-.new-job nav > a {
+.new-job nav .btn-categories {
   text-decoration: none;
   color: #4f5660;
   border: 1px solid #4f5660;
@@ -218,7 +218,7 @@ body {
   padding: 10px 25px;
   border-radius: 5px;
 }
-.new-job nav > a:hover {
+.new-job nav .btn-categories:hover {
   color: #3885e5;
   border: 1px solid #3885e5;
 }
@@ -233,6 +233,23 @@ body {
   line-height: 1.67;
   letter-spacing: 0.18px;
 }
+@media all and (max-width: 1000px) {
+  .new-job nav {
+    display: block;
+  }
+  .new-job nav ul {
+    width: max-content;
+    margin: 0 auto;
+  }
+  .new-job nav .btn-categories {
+    display: block;
+    width: max-content;
+    margin: 50px auto 0;
+  }
+  .new-job .article-text-1 {
+    margin: 50px 0;
+  }
+}
 .important-work {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -243,8 +260,8 @@ body {
 }
 .important-work .bg-content .content {
   max-width: 470px;
-  margin-left: auto;
-  padding: 100px 60px 0 0;
+  margin: 10% 0 0 auto;
+  padding: 0 60px 50px;
 }
 .important-work .bg-content .content p {
   line-height: 1.67;
@@ -263,6 +280,9 @@ body {
 .important-work .bg-content .content a:hover {
   color: #3885e5;
   background-color: #fff;
+}
+.important-work video {
+  width: 100%;
 }
 .section-slider {
   max-width: 97%;
